@@ -7,7 +7,6 @@
   <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-
   <title>&#960 Pizza</title>
 </head>
 <body>
@@ -20,36 +19,35 @@
       <div class="row">
         <div class="col-md-6">
           <h3>Formulate a &#960:</h3>
-            <div class="col-md-6">
-              <form id="pizza-form">
-                <div class="form-group">
-                  <label for="customer">Order Name:</label>
-                  <input type="text" class="form-control" id="customer" required>
-                </div><br>
-                <div class="form-group">
-                  <label for="pizza-size">Diameter Desired (in inches):</label>
-                  <input type="integer" class="form-control" id="pizza-size" required>
-                </div><br>
-                <div class="form-group">
-                  <label for="topping">Toppings:</label>
-                  <select id="topping">
-                    <option value="Pepperoni">Pepperoni</option>
-                    <option value="Cheese">Cheese</option>
-                  </select>
-                </div><br>
-                  <div class="form-group">
-                  <button type="submit" class="btn btn-\success">Submit your order</button>
-                  </div>
-                </form>
-            </div>
+          <div class="col-md-6">
+            <form id="pizza-form">
+              <div class="form-group">
+                <label for="customer">Order Name:</label>
+                <input type="text" class="form-control" id="customer" required>
+              </div><br>
+              <div class="form-group">
+                <label for="pizza-size">Diameter Desired (in inches):</label>
+                <input type="integer" class="form-control" id="pizza-size" required>
+              </div><br>
+              <div class="form-group">
+                <label for="topping">Toppings:</label>
+                <select id="topping">
+                  <option value="Pepperoni">Pepperoni</option>
+                  <option value="Cheese">Cheese</option>
+                </select>
+              </div><br>
+              <div class="form-group">
+                <button type="submit" class="btn btn-\success">Submit your order</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-
     <div id="pizza" class="jumbotron">
       <ul id="customer"></ul>
       <ul id="toppings"></ul>
       <ul id="pizza-output"></ul>
     </div>
   </body>
-</html>
+  </html>

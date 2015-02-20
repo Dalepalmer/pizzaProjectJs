@@ -12,12 +12,6 @@ var Pizza = {
   }
 };
 
-// Was going to make a topping prototype, but with two toppings it seemed like overkill
-// var Topping = {
-//   name: "",
-// }
-
-
 $(document).ready(function() {
   $(".jumbotron#form").hide();
   $(".jumbotron#form").show("slide", 1200);
@@ -34,11 +28,9 @@ $(document).ready(function() {
     $("ul#toppings").show(750);
     $("ul#pizza-output").show(770);
 
-
     var inputtedDiameter = $("input#pizza-size").val();
     var inputtedName = $("input#customer").val();
     var inputtedTopping = $("select#topping").val();
-
 
     var newPizza = Object.create(Pizza);
     newPizza.customerName = inputtedName;
@@ -46,12 +38,8 @@ $(document).ready(function() {
     newPizza.topping = inputtedTopping;
     newPizzaCut = newPizza.pizzaCut();
 
-
     $("ul#customer").append("<p>" + "Customer Name:" + " " + newPizza.customerName + "</p>");
     $("ul#toppings").append("<p>" + "Toppings:" + " " + newPizza.topping + "</p>");
     $("ul#pizza-output").append("<p>" + "Amount of slices:" + " " + newPizzaCut + "</p>");
-
-  })
-
-
-})
+  });
+});
