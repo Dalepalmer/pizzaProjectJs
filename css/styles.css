@@ -1,7 +1,8 @@
 .jumbotron {
   opacity: .75;
+  box-shadow: 10px 10px 5px #888888;
+  margin: 5px
 }
 
-div #pizza {
-
+.jumbotron #pizza {
 }

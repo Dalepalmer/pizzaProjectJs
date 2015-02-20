@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <script src="js/jquery-1.11.2.js"></script>
   <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Questrial|Syncopate|Quicksand|Ubuntu' rel='stylesheet' type='text/css'>
 
   <title>&#960 Pizza</title>
 </head>
 <body>
   <div class="jumbotron">
-    <h1 class="title">Order form</h1>
+    <h1 class="title">&#960 Pizza Order Form</h1>
     <h2>
       <p>Here at &#960 pizza, we are math geeks first and pizza nerds second.</p>
       <p>Through rigorous calculation, we create a &#960 for you that fits your exact specifications, to the diameter!<p>
@@ -35,20 +34,22 @@
                 </div><br>
                 <div class="form-group">
                   <label for="topping">Toppings:</label>
-                  <input type="text" class="form-control" id="topping" required>
+                  <select id="topping">
+                    <option value="Pepperoni">Pepperoni</option>
+                    <option value="Cheese">Cheese</option>
+                  </select>
                 </div><br>
                   <button type="submit" class="btn btn-\success">Submit your order</button>
                 </form>
             </div>
         </div>
       </div>
-<br>
-<br>
-      <div class="container" id="pizza">
-        <ul id="customer"></ul>
-        <ul id="toppings"></ul>
-        <ul id="pizza-output"></ul>
-      </div>
+    </div>
+
+    <div id="pizza" class="jumbotron">
+      <ul id="customer"></ul>
+      <ul id="toppings"></ul>
+      <ul id="pizza-output"></ul>
     </div>
   </body>
 </html>
