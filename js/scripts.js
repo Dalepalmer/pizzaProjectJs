@@ -19,6 +19,8 @@ var Pizza = {
 
 
 $(document).ready(function() {
+  $(".jumbotron#form").hide();
+  $(".jumbotron#form").show("slide", 1200);
   $(".jumbotron#pizza").hide();
   $("ul#customer").hide();
   $("ul#toppings").hide();
@@ -43,7 +45,6 @@ $(document).ready(function() {
     newPizza.diameter = inputtedDiameter;
     newPizza.topping = inputtedTopping;
     newPizzaCut = newPizza.pizzaCut();
-    debugger
 
 
     $("ul#customer").append("<p>" + "Customer Name:" + " " + newPizza.customerName + "</p>");
